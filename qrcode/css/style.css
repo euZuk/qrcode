@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.fundo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.principal{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.principal input{
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(89, 89, 89, 0.2);
+}
+.principal button{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0178BD;
+    color: 	#f5b041;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+        background-color: #f5b041;
+        color: #0178BD;
+        transition: 0.25s;
+    }
+}
+.principal h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+.principal .caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.principal .caixa #qrcode{
+    margin-top: 10px;
+    width: 100%;
+}
